@@ -90,7 +90,7 @@
 - `merge message 규칙`
     - [Merge] 브랜치 이름 - #Issue 번호 혹은 PR 번호
     - 예시
-        - [Merge] main - #9
+        - [Merge] main <-hyungjun#1-feat-user-controller
     <br><br>
     
 ---
