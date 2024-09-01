@@ -46,7 +46,7 @@
       <br><br>
     - 템플릿
         - issue 제목
-            - 예시: **[Feat] 이슈 정리**
+            - 예시: **feat: 이슈 정리**
         - issue 템플릿
 
             ```markdown
@@ -58,22 +58,22 @@
             
             ```
         - 제목 예시
-            - [Add] UI button 구현
+            - add: UI button 구현
     <br><br>
 - `branch 규칙`
     - 각자의 영어 이름을 딴 branch 명을 사용한다.
     - 예시: 
     ```
   git checkout -b <브랜치명>      
-  git checkout -b wonjeong
+  git checkout -b hyungjun
     ```
     
 - `commit message 규칙`
     - 참고: [https://doublesprogramming.tistory.com/256](https://doublesprogramming.tistory.com/256)
-    - [종류] 메시지 - #이슈번호
+    - 종류: 메시지 - #이슈번호
     - 예시
-        - [Feat] todo-list 회원 API 엔티티 구현 - #2
-        - [Fix] todo-list 회원 단건 조회 서비스 에러 수정 - #2
+        - feat: todo-list 회원 API 엔티티 구현 - #2
+        - fix: todo-list 회원 단건 조회 서비스 에러 수정 - #2
     <br><br>
 - `PR 규칙`
     - PR 템플릿
@@ -88,9 +88,9 @@
         ```
 
 - `merge message 규칙`
-    - [Merge] 브랜치 이름 - #Issue 번호 혹은 PR 번호
+    - merge: 브랜치 이름 - #Issue 번호 혹은 PR 번호
     - 예시
-        - [Merge] main <-hyungjun#1-feat-user-controller
+        - merge: main <-hyungjun#1-feat-user-controller
     <br><br>
     
 ---
