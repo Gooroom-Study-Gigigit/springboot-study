@@ -1,6 +1,5 @@
 # Board ERD
-<img width="754" alt="image" src="https://github.com/user-attachments/assets/3c3b5d0f-2f56-4102-91b8-147bfd26abf1">
-
+<img width="779" alt="board ERD" src="https://github.com/user-attachments/assets/89a74349-c19c-4c7d-8f74-28ebb014f72e">
 
 멤버 테이블 : 로그인에 사용될 이메일과, 비밀번호 필드  
 게시판에 작성자 이름으로 적힐 닉네임, 실제 유저의 이름  
