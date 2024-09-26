@@ -2,6 +2,8 @@ package gooroom.gigigit.board.component.file;
 
 import gooroom.gigigit.board.exception.CustomException;
 import gooroom.gigigit.board.exception.ExceptionCode;
+import gooroom.gigigit.board.image.dto.res.WriteImgToFileSystemRes;
+import gooroom.gigigit.board.util.FileNameGenerator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
@@ -95,5 +97,18 @@ public class FileComponentImpl implements FileComponent{
             log.error(e.getMessage());
             throw new CustomException(ExceptionCode.FILE_WRITE_ERROR);
         }
+    }
+
+    @Override
+    public WriteImgToFileSystemRes writeImgToFileSystem(String imgName, String contentType, byte[] imgBytes) {
+        String generateName = FileNameGenerator.generatorName(imgName);
+        String imgPath = FOLDER_PATH + generateName;
+        try {
+            Files.write(Paths.get(imgPath),imgBytes);
+        }catch (Exception e){
+            log.error(e.getMessage());
+            throw new CustomException(ExceptionCode.FILE_WRITE_ERROR);
+        }
+        return new WriteImgToFileSystemRes(imgPath,generateName);
     }
 }

@@ -1,5 +1,5 @@
 # Board ERD
-<img width="754" alt="image" src="https://github.com/user-attachments/assets/3c3b5d0f-2f56-4102-91b8-147bfd26abf1">
+<img width="883" alt="board" src="https://github.com/user-attachments/assets/a33cab23-50d7-4b9e-ae45-64ec96977ade">
 
 
 멤버 테이블 : 로그인에 사용될 이메일과, 비밀번호 필드  
